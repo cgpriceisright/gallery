@@ -3,14 +3,21 @@ body {
 }
 
 h2 {
+font-size: 50px;
   color: white;
   font-family: georgia, serif;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px
+
 }
 
 .caption {
 	color: white;
 	font-family: georgia, serif;
 	font-size: 25px;
+	padding-top: 10px;
+  	padding-bottom: 10px
 }
 
 *{
@@ -21,8 +28,37 @@ h2 {
 
 .slide-container {
 	width:1000px;
-	height: 700px;
-	margin: auto;
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+	/* will unhide once the buttons work 
+	overflow: hidden;
+	*/
+}
+
+.image-container {
+	width: 7000px; /* I have to multiply the width of all of the resized photos (7 photos at 1000px each = 7000px. For height, it's irrelevant because the slideshow is horizontal.*/
+	height: 900px;
+	position: relative;
+	transition: left 1.5s;
+/* This is to ensure the transition works in different browsers */
+	-webkit-transition:left 1.5s;
+	-moz-transition: left 1.5s;
+	-o-transition: left 1.5s;
+}
+
+.button-container {
+	top: -15px;
+	position: relative;
+}
+
+.slider-button {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 4px;
+
 
 }
 
@@ -32,11 +68,43 @@ h2 {
 
 }
 
+.slider-image {
+	float:left;
+	margin:0px;
+	padding: 0px;
+}
+
 img.resize {
     max-width:540px;
     height: auto;
 }
 
 }
+
+#slider-image-1:target ~.image-container {
+	left: 0px;
+}
+
+#slider-image-2:target ~.image-container {
+	left: -800px;
+}
+
+#slider-image-3:target ~.image-container {
+	left: -800px;
+}
+#slider-image-4:target ~.image-container {
+	left: -800px;
+}
+#slider-image-5:target ~.image-container {
+	left: -800px;
+}
+#slider-image-6:target ~.image-container {
+	left: -800px;
+}
+#slider-image-7:target ~.image-container {
+	left: -800px;
+}
+
+
 <button class="w3-button w3-display-left" onclick="plusDivs(-1)">;</button>
 <button class="w3-button w3-display-right" onclick="plusDivs(+1)";</button>
