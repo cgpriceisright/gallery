@@ -1,4 +1,4 @@
-// document ready function
+ // document ready function
 
 	//DEFINE YOUR VARIABLES
 	//select all the slides (value of the variable will be an array)
