@@ -39,8 +39,7 @@
 
 	//when the user clicks "previous"
 
-
-		//slideIndex++; // 
+		slideIndex--; // 
 		//same as slideIndex=
 		//slideindex-1
 		
