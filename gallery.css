@@ -19,8 +19,9 @@ h2 {
 	box-sizing: border-box;
 }
 
-.carousel-container {
-	width:90%;
+.slide-container {
+	width:1000px;
+	height: 700px;
 	margin: auto;
 
 }
